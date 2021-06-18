@@ -22,10 +22,7 @@ def index(request):
     page_obj = paginator.get_page(page)
     context = {'question_list':page_obj}
 
-    # answer_list = Answer.objects.all()
-    # context = {'question_list': question_list, 'answer_list': answer_list}
     return render(request, 'pybo/question_list.html', context)
-    # return HttpResponse('안녕하세요 학습 동아리 게시판 입니다.')
 
 def detail(request, question_id):
     """
