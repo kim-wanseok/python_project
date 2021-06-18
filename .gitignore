@@ -3,3 +3,4 @@
 __pycahce__
 .vscode/
 pybo/migrations/
+common/migrations/
